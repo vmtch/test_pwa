@@ -4,9 +4,9 @@ import './App.css';
 
 function App() {
   const permitNotification = () => {
-      Notification.requestPermission().then(p => {
+      Notification.requestPermission().then((p) => {
           console.log(p);
-      }
+      });
   };
   const issueNotification = () => {
       new Notification("test", {
